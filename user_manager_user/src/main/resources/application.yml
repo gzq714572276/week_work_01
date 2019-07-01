@@ -1,0 +1,19 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:mysql:///week_work
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+dubbo:
+  application:
+    name: User_User
+  registry:
+    address: zookeeper://192.168.135.233:2181
+  consumer:
+    check: false
+    retries: 3
+    timeout: 10000
+  protocol:
+    port: -1

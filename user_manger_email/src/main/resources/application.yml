@@ -1,0 +1,19 @@
+server:
+  port: 9092
+spring:
+  mail:
+    protocol: smtp
+    host: smtp.sina.com
+    username: gzq___123@sina.com
+    password: zhang110
+dubbo:
+  application:
+    name: User_Email
+  registry:
+    address: zookeeper://192.168.135.233:2181
+  consumer:
+    check: false
+    retries: 3
+    timeout: 10000
+  protocol:
+    port: -1

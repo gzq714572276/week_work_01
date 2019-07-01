@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>重置密码页面</h1>
+    <form action="/user/resetPwd" method="post">
+        <input type="hidden" name="name" th:value="${name}">
+        新的密码：<input type="text" name = "password"><br/>
+        重复密码：<input type="text"><br/>
+        <input type="submit" value="确定">
+    </form>
+</body>
+</html>
